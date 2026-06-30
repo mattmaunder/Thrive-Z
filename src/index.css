@@ -8,6 +8,8 @@
   --color-border: rgba(15, 40, 71, 0.08);
   --color-warning: #ffb800;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-thrive: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -26,6 +28,14 @@
 
   #root {
     min-height: 100vh;
+  }
+
+  .font-thrive {
+    font-family: var(--font-thrive);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
   }
 }
 

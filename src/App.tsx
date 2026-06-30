@@ -5,13 +5,15 @@ import { DashboardPage } from './pages/DashboardPage'
 import { GoalsPage } from './pages/GoalsPage'
 import { HomePage } from './pages/HomePage'
 import { LoginPage } from './pages/LoginPage'
+import { ThriveZHomePage } from './pages/ThriveZHomePage'
 import { RoadmapPage } from './pages/RoadmapPage'
 import { VisionMapPage } from './pages/VisionMapPage'
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<LoginPage />} />
+      <Route path="/" element={<ThriveZHomePage />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route element={<AppLayout />}>
         <Route path="/home" element={<HomePage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
