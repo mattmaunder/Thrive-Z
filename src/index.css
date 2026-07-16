@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #0f2847;
-  --color-teal: #00bfa6;
-  --color-muted: #717182;
-  --color-surface: #fafafa;
-  --color-border: rgba(15, 40, 71, 0.08);
-  --color-warning: #ffb800;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-navy: #111111;
+  --color-teal: #0f5d00;
+  --color-muted: rgba(0, 0, 0, 0.55);
+  --color-surface: #f2ffd1;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-warning: #f5a623;
+  --color-maroon: #64002d;
+  --color-lime: #b0fe00;
+  --color-pink: #ff91f2;
+  --color-link: #850056;
+  --font-sans: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-thrive: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
 }
@@ -24,6 +28,7 @@
     background-color: var(--color-surface);
     color: var(--color-navy);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   #root {
@@ -40,25 +45,16 @@
 }
 
 @layer utilities {
-  .gradient-primary {
+  .gradient-income {
     background-image: linear-gradient(
-      90deg,
-      rgb(15, 40, 71) 0%,
-      rgb(16, 50, 78) 7.14%,
-      rgb(17, 60, 84) 14.29%,
-      rgb(18, 70, 91) 21.43%,
-      rgb(18, 80, 98) 28.57%,
-      rgb(19, 91, 105) 35.71%,
-      rgb(19, 101, 111) 42.86%,
-      rgb(18, 112, 118) 50%,
-      rgb(18, 123, 125) 57.14%,
-      rgb(17, 134, 132) 64.29%,
-      rgb(15, 145, 139) 71.43%,
-      rgb(13, 156, 145) 78.57%,
-      rgb(9, 168, 152) 85.71%,
-      rgb(5, 179, 159) 92.86%,
-      rgb(0, 191, 166) 100%
+      158.44deg,
+      rgb(180, 255, 166) 3.67%,
+      rgb(10, 60, 0) 96.33%
     );
+  }
+
+  .gradient-primary {
+    background-color: var(--color-maroon);
   }
 
   .gradient-login-bg {

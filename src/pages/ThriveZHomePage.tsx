@@ -60,7 +60,7 @@ export function ThriveZHomePage() {
               </div>
             </div>
 
-            <h1 className="font-thrive text-2xl font-medium leading-9 text-black">Hi, Jamie</h1>
+            <h1 className="font-thrive text-2xl font-medium leading-9 text-black">Hi, Matt</h1>
 
             <div
               className="relative h-[119px] w-full overflow-hidden rounded-3xl bg-[#ff91f2] text-left"

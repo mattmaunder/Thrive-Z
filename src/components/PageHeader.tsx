@@ -9,12 +9,10 @@ export function PageHeader({ title, subtitle, action }: PageHeaderProps) {
     <div className="flex items-start justify-between gap-4">
       <div>
         <div className="flex items-center gap-2">
-          <h1 className="text-xl font-medium tracking-tight text-navy">{title}</h1>
-          <span className="rounded-full bg-[rgba(236,236,240,0.5)] px-2 py-1 text-xs text-muted">
-            Thrive Compass
-          </span>
+          <h1 className="text-xl font-bold text-navy">{title}</h1>
+          <span className="text-xs font-medium text-black/40">Thrive Compass</span>
         </div>
-        <p className="mt-2 text-base text-muted">{subtitle}</p>
+        <p className="mt-1 text-[13px] text-muted">{subtitle}</p>
       </div>
       {action}
     </div>
