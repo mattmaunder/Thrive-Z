@@ -6,7 +6,7 @@ type ThriveLogoProps = {
 
 export function ThriveLogo({ size = 'default' }: ThriveLogoProps) {
   const markSize = size === 'small' ? 24 : 30
-  const wordSize = size === 'small' ? 'text-[19px] leading-[19px]' : 'text-[24.6px] leading-[24.6px]'
+  const wordSize = size === 'small' ? 'text-[20px] leading-[30px] tracking-[-0.6px]' : 'text-[24.6px] leading-[24.6px]'
 
   return (
     <div className="flex items-center gap-2" data-node-id="90:12475">
